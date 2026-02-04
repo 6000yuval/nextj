@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --page-bg: #f8fafc;
+  --page-ink: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Heebo", "Assistant", system-ui, sans-serif;
+  background: var(--page-bg);
+  color: var(--page-ink);
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(90vw, 1100px);
+  margin-inline: auto;
+}
+
+.reading-width {
+  max-width: 66ch;
+}
+
+.section-heading {
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.75rem);
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.article-content {
+  font-size: 1.05rem;
+  color: #334155;
+}
+
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  color: #0f172a;
+  font-weight: 700;
+  margin-top: 2.5rem;
+}
+
+.article-content h2 {
+  font-size: 1.6rem;
+}
+
+.article-content h3 {
+  font-size: 1.3rem;
+}
+
+.article-content p {
+  margin: 1rem 0;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-inline-start: 1.5rem;
+  margin: 1rem 0;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content blockquote {
+  border-inline-start: 4px solid #2563eb;
+  margin: 1.5rem 0;
+  padding: 0.25rem 1rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+}
