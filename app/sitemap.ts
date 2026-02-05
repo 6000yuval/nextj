@@ -1,29 +1,67 @@
 import type { MetadataRoute } from "next";
 
-import { BLOG_CATEGORIES, getAllPosts } from "@/lib/posts";
+import {
+  AUTHORS,
+  INDEX_TAG_PAGES,
+  POSTS_PER_PAGE,
+  TOPICS,
+  buildPostPath,
+  getAllIndexablePosts,
+  getPostsByTopic,
+  getAllTags,
+} from "@/lib/posts";
 import { buildUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 export const revalidate = false;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts();
+  const posts = getAllIndexablePosts();
   const now = new Date();
 
-  const staticRoutes = ["/", "/posts", "/about"].map((route) => ({
+  const staticRoutes = ["/", "/about", "/privacy"].map((route) => ({
     url: buildUrl(route),
     lastModified: now,
   }));
 
-  const categoryRoutes = BLOG_CATEGORIES.map((category) => ({
-    url: buildUrl(`/posts/category/${category.id}`),
+  const topicRoutes = TOPICS.map((topic) => ({
+    url: buildUrl(`/topic/${topic.slug}`),
+    lastModified: now,
+  }));
+
+  const topicPaginationRoutes = TOPICS.flatMap((topic) => {
+    const totalPages = Math.ceil(getPostsByTopic(topic.slug).length / POSTS_PER_PAGE);
+    if (totalPages <= 1) return [];
+
+    return Array.from({ length: totalPages - 1 }, (_, index) => ({
+      url: buildUrl(`/topic/${topic.slug}/page/${index + 2}`),
+      lastModified: now,
+    }));
+  });
+
+  const authorRoutes = AUTHORS.map((author) => ({
+    url: buildUrl(`/author/${author.slug}`),
     lastModified: now,
   }));
 
   const postRoutes = posts.map((post) => ({
-    url: buildUrl(`/posts/${post.slug}`),
-    lastModified: new Date(post.date),
+    url: buildUrl(buildPostPath(post)),
+    lastModified: new Date(post.dateModified),
   }));
 
-  return [...staticRoutes, ...categoryRoutes, ...postRoutes];
+  const tagRoutes = INDEX_TAG_PAGES
+    ? getAllTags().map((tag) => ({
+        url: buildUrl(`/tag/${tag}`),
+        lastModified: now,
+      }))
+    : [];
+
+  return [
+    ...staticRoutes,
+    ...topicRoutes,
+    ...topicPaginationRoutes,
+    ...authorRoutes,
+    ...postRoutes,
+    ...tagRoutes,
+  ];
 }

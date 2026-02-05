@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "בית" },
-  { href: "/posts", label: "מאמרים" },
+  { href: "/topic/foundations", label: "נושאים" },
   { href: "/about", label: "אודות" },
+  { href: "/privacy", label: "פרטיות" },
 ];
 
 export default function MobileMenu() {

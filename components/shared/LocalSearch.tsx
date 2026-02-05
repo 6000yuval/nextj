@@ -4,7 +4,13 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 
 type LocalSearchProps = {
-  posts: Array<{ slug: string; title: string; description: string; tags?: string[] }>;
+  posts: Array<{
+    slug: string;
+    topic: string;
+    title: string;
+    description: string;
+    tags?: string[];
+  }>;
 };
 
 export default function LocalSearch({ posts }: LocalSearchProps) {
@@ -40,7 +46,7 @@ export default function LocalSearch({ posts }: LocalSearchProps) {
             results.map((post) => (
               <Link
                 key={post.slug}
-                href={`/posts/${post.slug}`}
+                href={`/${post.topic}/${post.slug}`}
                 className="block rounded-lg border border-sand-100 px-3 py-2 hover:bg-sand-50"
               >
                 {post.title}

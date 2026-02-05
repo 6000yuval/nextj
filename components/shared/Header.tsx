@@ -13,8 +13,9 @@ export default function Header() {
         </Link>
         <nav className="hidden items-center gap-6 lg:flex">
           <NavLink href="/">בית</NavLink>
-          <NavLink href="/posts">מאמרים</NavLink>
+          <NavLink href="/topic/foundations">נושאים</NavLink>
           <NavLink href="/about">אודות</NavLink>
+          <NavLink href="/privacy">פרטיות</NavLink>
         </nav>
         <MobileMenu />
       </div>

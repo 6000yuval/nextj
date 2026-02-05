@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 import LocalSearch from "@/components/shared/LocalSearch";
 import NewsletterForm from "@/components/shared/NewsletterForm";
-import { canonicalOrPath } from "@/lib/site";
-import { BLOG_CATEGORIES, getAllPosts, getPostCategoryId } from "@/lib/posts";
+import { buildPostPath, getAllIndexablePosts, TOPICS } from "@/lib/posts";
+import { buildPageMetadata } from "@/lib/seo";
 
 const heroFeatures = [
   "תובנות פרקטיות על מודלים ושימושים",
@@ -13,24 +12,24 @@ const heroFeatures = [
   "כלים וזרימות עבודה לצוותים חכמים",
 ];
 
-export const metadata: Metadata = {
-  title: "בית",
-  description:
-    "בלוג בעברית שמרכז ידע על בינה מלאכותית, פיתוח וכלים לעבודה חכמה.",
-  alternates: {
-    canonical: canonicalOrPath("/"),
-  },
-};
+export const generateMetadata = async () =>
+  buildPageMetadata({
+    title: "בלוג AI בעברית: מדריכים, פרומפטים ותהליכי עבודה",
+    description:
+      "מדריכים פרקטיים בעברית על בינה מלאכותית: יסודות, פרומפטים, אוטומציה ויישומים עסקיים.",
+    path: "/",
+  });
 
 export const dynamic = "force-static";
 export const revalidate = false;
 
 export default function HomePage() {
-  const posts = getAllPosts();
-  const categoryCounts = BLOG_CATEGORIES.map((category) => ({
-    ...category,
-    count: posts.filter((post) => getPostCategoryId(post) === category.id).length,
+  const posts = getAllIndexablePosts();
+  const topicCounts = TOPICS.map((topic) => ({
+    ...topic,
+    count: posts.filter((post) => post.topic === topic.slug).length,
   }));
+
   return (
     <main className="min-h-screen bg-sand-50 text-ink-900">
       <section className="container py-16 sm:py-20">
@@ -77,20 +76,20 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-            {categoryCounts.map((category) => (
+            {topicCounts.map((topic) => (
               <Link
-                key={category.id}
-                href={`/posts/category/${category.id}`}
+                key={topic.slug}
+                href={`/topic/${topic.slug}`}
                 className="group flex h-full flex-col justify-between rounded-3xl border border-sand-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="space-y-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
-                    {category.count} מאמרים
+                    {topic.count} מאמרים
                   </p>
                   <h3 className="text-xl font-semibold text-ink-900">
-                    {category.title}
+                    {topic.title}
                   </h3>
-                  <p className="text-sm text-ink-700">{category.description}</p>
+                  <p className="text-sm text-ink-700">{topic.description}</p>
                 </div>
                 <span className="mt-6 text-sm font-semibold text-accent-500">
                   להצגת המאמרים
@@ -117,7 +116,7 @@ export default function HomePage() {
                     key={post.slug}
                     className="rounded-2xl border border-sand-100 p-5"
                   >
-                    <p className="text-xs text-ink-500">{post.date}</p>
+                    <p className="text-xs text-ink-500">{post.datePublished}</p>
                     <h3 className="mt-2 text-lg font-semibold text-ink-900">
                       {post.title}
                     </h3>
@@ -125,7 +124,7 @@ export default function HomePage() {
                       {post.description}
                     </p>
                     <Link
-                      href={`/posts/${post.slug}`}
+                      href={buildPostPath(post)}
                       className="mt-4 inline-flex text-sm font-semibold text-accent-500"
                     >
                       לקריאת המאמר
@@ -137,8 +136,9 @@ export default function HomePage() {
           </div>
           <div className="space-y-6">
             <LocalSearch
-              posts={posts.map(({ slug, title, description, tags }) => ({
+              posts={posts.map(({ slug, topic, title, description, tags }) => ({
                 slug,
+                topic,
                 title,
                 description,
                 tags,

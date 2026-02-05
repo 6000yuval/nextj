@@ -14,14 +14,17 @@ export default function Footer() {
           <Link href="/" className="hover:text-ink-900">
             בית
           </Link>
-          <Link href="/posts" className="hover:text-ink-900">
-            מאמרים
+          <Link href="/topic/foundations" className="hover:text-ink-900">
+            נושאים
           </Link>
           <Link href="/about" className="hover:text-ink-900">
             אודות
           </Link>
-          <Link href="/rss.xml" className="hover:text-ink-900">
-            RSS
+          <Link href="/privacy" className="hover:text-ink-900">
+            פרטיות
+          </Link>
+          <Link href="/feed.xml" className="hover:text-ink-900">
+            Feed
           </Link>
         </div>
       </div>

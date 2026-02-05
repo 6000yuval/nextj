@@ -1,15 +1,14 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 
-import { canonicalOrPath, buildUrl, SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
+import { buildUrl, SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "אודות",
-  description: "הכירו את הצוות והחזון שמאחורי הבלוג בעברית על AI ופיתוח.",
-  alternates: {
-    canonical: canonicalOrPath("/about"),
-  },
-};
+export const generateMetadata = async () =>
+  buildPageMetadata({
+    title: "אודות הבלוג: מי אנחנו ומה החזון",
+    description: "הכירו את מחבר הבלוג והגישה שלנו לתוכן AI פרקטי בעברית.",
+    path: "/about",
+  });
 
 export default function AboutPage() {
   const canonical = buildUrl("/about");
