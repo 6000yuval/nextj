@@ -1,0 +1,58 @@
+---
+title: "המדריך לפרטיות: מה אסור בשום אופן לספר ל-AI?"
+description: "האם מותר להעלות מסמכים רפואיים? סיסמאות? סודות מסחריים? כל מה שצריך לדעת כדי להישאר בטוחים."
+date: "2026-01-01"
+coverImage: "https://images.unsplash.com/photo-1510915361405-ef8db9036289?auto=format&fit=crop&q=80&w=1000"
+author: "???? ???"
+readingTimeMinutes: 5
+---
+
+<div className="space-y-6 text-lg leading-relaxed text-slate-800 text-justify">
+<div className="bg-red-50 border-r-4 border-red-600 p-4 mb-6 rounded-lg">
+  <h3 className="text-lg font-bold text-red-900 mb-2">כלל הברזל: אם זה סוד, זה לא עולה ל-AI</h3>
+  <p className="text-red-800 text-sm md:text-base leading-relaxed">ברירת המחדל של רוב כלי ה-AI (כמו ChatGPT ו-Gemini) היא להשתמש בשיחות שלכם כדי לאמן ולשפר את המודל. המשמעות: עובד של החברה, או אפילו משתמש אחר בעתיד, עלולים תיאורטית להיחשף למידע שהזנתם.</p>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">הרשימה השחורה: מה לא כותבים?</h3>
+<div className="space-y-4">
+  <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+    <p className="font-bold text-slate-800 mb-2 flex items-center gap-2">פרטים אישיים מזהים (PII)</p>
+    <p className="text-sm text-slate-600">תעודות זהות, מספרי אשראי, כתובות מגורים מלאות, מספרי טלפון פרטיים. גם אם ה-AI מבטיח שהוא "מאובטח", דליפות מידע קורות.</p>
+  </div>
+  <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+    <p className="font-bold text-slate-800 mb-2 flex items-center gap-2">סודות מסחריים ועבודה</p>
+    <p className="text-sm text-slate-600">קוד תוכנה סודי של החברה, מצגות פנימיות שטרם פורסמו, רשימות לקוחות, אסטרטגיות עסקיות רגישות. (סמסונג למדו את זה בדרך הקשה כשעובדים הדליפו קוד סודי ל-ChatGPT).</p>
+  </div>
+  <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+    <p className="font-bold text-slate-800 mb-2 flex items-center gap-2">מידע רפואי ואינטימי</p>
+    <p className="text-sm text-slate-600">סיכומי ביקור רופא, תוצאות בדיקות דם, או פרטים אינטימיים על אנשים אחרים ללא ידיעתם.</p>
+  </div>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">איך בכל זאת עובדים בטוח?</h3>
+<p>זה לא אומר שאי אפשר להיעזר ב-AI לעבודה, אבל צריך לעשות "התממה" (Anonymization) למידע.</p>
+<div className="bg-green-50 p-4 rounded-lg border-t-4 border-green-500">
+  <h4 className="font-bold text-green-900 mb-2">שיטת "החלפת השמות"</h4>
+  <ul className="text-sm text-green-800 space-y-2 list-disc list-inside">
+    <li><strong>במקום:</strong> "כתוב מייל ללקוח יוסי כהן מחברת 'אינטל' שמסרב לשלם 50,000 שקל."</li>
+    <li><strong>כתבו:</strong> "כתוב מייל ללקוח [שם בדוי] מחברת [חברה גדולה] שמסרב לשלם סכום משמעותי."</li>
+  </ul>
+  <p className="text-sm text-green-800 mt-2">אחרי שה-AI כותב את המייל, תעתיקו אותו לוורד ושם תחזירו את הפרטים האמיתיים.</p>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">הגדרות שחובה להכיר</h3>
+<p>ברוב הכלים יש אפשרות לכבות את שמירת ההיסטוריה ואת השימוש במידע לאימון.</p>
+<ul className="list-disc list-inside space-y-2">
+  <li><strong>ב-ChatGPT:</strong> חפשו בהגדרות את "Data Controls" וכבו את "Chat History & Training".</li>
+  <li><strong>ב-Gemini/Google:</strong> המידע נשמר בחשבון Google שלכם, אפשר למחוק אותו דרך "My Activity".</li>
+  <li><strong>בארגונים:</strong> אם יש לכם גרסת Enterprise (בתשלום ארגוני), בדרך כלל יש התחייבות שהמידע <strong>לא</strong> משמש לאימון המודל.</li>
+</ul>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">שאלות נפוצות</h3>
+<div className="space-y-4">
+  <details className="group bg-slate-50 p-4 rounded-lg cursor-pointer">
+    <summary className="font-bold text-slate-800 list-none flex justify-between items-center"><span>האם מותר להעלות תמונה שלי?</span></summary>
+    <p className="text-slate-600 mt-2 text-sm">תמונה של הפנים שלכם נחשבת מידע ביומטרי רגיש. אם אתם מעלים אותה, קחו בחשבון שהיא נשמרת בשרתים. עדיף לא להעלות תמונות של ילדים או אנשים שלא נתנו הסכמה.</p>
+  </details>
+</div>
+</div>

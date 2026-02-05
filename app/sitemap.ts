@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 
-import { getAllPosts } from "@/lib/posts";
+import { BLOG_CATEGORIES, getAllPosts } from "@/lib/posts";
 import { buildUrl } from "@/lib/site";
+
+export const dynamic = "force-static";
+export const revalidate = false;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
@@ -12,10 +15,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
   }));
 
+  const categoryRoutes = BLOG_CATEGORIES.map((category) => ({
+    url: buildUrl(`/posts/category/${category.id}`),
+    lastModified: now,
+  }));
+
   const postRoutes = posts.map((post) => ({
     url: buildUrl(`/posts/${post.slug}`),
     lastModified: new Date(post.date),
   }));
 
-  return [...staticRoutes, ...postRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...postRoutes];
 }

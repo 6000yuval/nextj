@@ -5,7 +5,7 @@ import Link from "next/link";
 import LocalSearch from "@/components/shared/LocalSearch";
 import NewsletterForm from "@/components/shared/NewsletterForm";
 import { canonicalOrPath } from "@/lib/site";
-import { getAllPosts } from "@/lib/posts";
+import { BLOG_CATEGORIES, getAllPosts, getPostCategoryId } from "@/lib/posts";
 
 const heroFeatures = [
   "תובנות פרקטיות על מודלים ושימושים",
@@ -22,8 +22,15 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default function HomePage() {
   const posts = getAllPosts();
+  const categoryCounts = BLOG_CATEGORIES.map((category) => ({
+    ...category,
+    count: posts.filter((post) => getPostCategoryId(post) === category.id).length,
+  }));
   return (
     <main className="min-h-screen bg-sand-50 text-ink-900">
       <section className="container py-16 sm:py-20">
@@ -57,6 +64,39 @@ export default function HomePage() {
               className="object-cover"
               priority
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="container pb-16">
+        <div className="space-y-6">
+          <div>
+            <h2 className="section-heading">קטגוריות מובילות</h2>
+            <p className="mt-2 text-ink-700">
+              בחרו תחום עניין וקבלו את כל המאמרים הרלוונטיים במקום אחד.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+            {categoryCounts.map((category) => (
+              <Link
+                key={category.id}
+                href={`/posts/category/${category.id}`}
+                className="group flex h-full flex-col justify-between rounded-3xl border border-sand-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <div className="space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
+                    {category.count} מאמרים
+                  </p>
+                  <h3 className="text-xl font-semibold text-ink-900">
+                    {category.title}
+                  </h3>
+                  <p className="text-sm text-ink-700">{category.description}</p>
+                </div>
+                <span className="mt-6 text-sm font-semibold text-accent-500">
+                  להצגת המאמרים
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

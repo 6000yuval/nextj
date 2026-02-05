@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Blog</title>
+    <link>/</link>
+    <description></description>
+    
+      <item>
+        <title>למה בינה מלאכותית טועה בביטחון מלא</title>
+        <link>/posts/ai-confidence-errors</link>
+        <guid>/posts/ai-confidence-errors</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>AI לא יודע שהוא טועה — ולכן הוא גם לא מהסס.</description>
+      </item>
+      <item>
+        <title>האם בינה מלאכותית מסוכנת לאנושות?</title>
+        <link>/posts/ai-danger-humanity</link>
+        <guid>/posts/ai-danger-humanity</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>בינה מלאכותית לא מסוכנת כי היא “חכמה מדי” — היא מסוכנת כשאנחנו סומכים עליה יותר מדי.</description>
+      </item>
+      <item>
+        <title>האם AI הולך להחליף את העבודה שלך?</title>
+        <link>/posts/ai-replacement-reality</link>
+        <guid>/posts/ai-replacement-reality</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>AI לא מחליף אנשים. הוא מחליף אנשים שלא משתמשים בו.</description>
+      </item>
+      <item>
+        <title>איך בינה מלאכותית יכולה לחסוך לך שעות עבודה</title>
+        <link>/posts/ai-save-time-weekly</link>
+        <guid>/posts/ai-save-time-weekly</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>AI לא עובד במקומך — הוא חוסך לך את החלקים המעצבנים של העבודה.</description>
+      </item>
+      <item>
+        <title>לחשוב בקול רם: השיטה שתמנע מה-AI לעשות טעויות</title>
+        <link>/posts/chain-of-thought</link>
+        <guid>/posts/chain-of-thought</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>טכניקת &quot;שרשרת המחשבה&quot; (Chain of Thought) היא הדרך הכי טובה לגרום למודל לפתור בעיות מורכבות בלי ליפול בפח.</description>
+      </item>
+      <item>
+        <title>איך ChatGPT באמת עובד (בלי מתמטיקה)</title>
+        <link>/posts/how-chatgpt-works-simple</link>
+        <guid>/posts/how-chatgpt-works-simple</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>ChatGPT לא יודע דברים — הוא יודע להשלים משפטים.</description>
+      </item>
+      <item>
+        <title>טכניקת הפרסונה: &quot;תתנהג כמו...&quot;</title>
+        <link>/posts/persona-technique</link>
+        <guid>/posts/persona-technique</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>הסוד הגדול של הנדסת הפרומפטים: איך שינוי כובע אחד הופך תשובה בינונית לתשובה של מומחה עולמי.</description>
+      </item>
+      <item>
+        <title>מדריך לעצלנים: איך חסכתי 10 שעות בשבוע עם AI</title>
+        <link>/posts/save-10-hours-a-week</link>
+        <guid>/posts/save-10-hours-a-week</guid>
+        <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+        <description>בלי סיסמאות ובלי תיאוריות. רשימת ה&quot;האקים&quot; הקטנים לחיים שיפנו לכם זמן לנטפליקס, לילדים או סתם לשינה.</description>
+      </item>
+      <item>
+        <title>האם ה-AI ישמיד את האנושות? (ספוילר: הבעיה אחרת)</title>
+        <link>/posts/is-ai-dangerous</link>
+        <guid>/posts/is-ai-dangerous</guid>
+        <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+        <description>כולם מפחדים מ&quot;שליחות קטלנית&quot;, אבל הסכנה האמיתית של הבינה המלאכותית היא הרבה יותר שקטה, ערמומית ומסוכנת.</description>
+      </item>
+      <item>
+        <title>AI Automation Blueprint: Build Real Workflows That Save Hours Every Week</title>
+        <link>/posts/ai-automation-blueprint</link>
+        <guid>/posts/ai-automation-blueprint</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>A practical, step-by-step guide to designing AI automations for real business work: intake, routing, drafting, approval, and measurement.</description>
+      </item>
+      <item>
+        <title>AI for Customer Support: Cut Response Time Without Losing Trust</title>
+        <link>/posts/ai-customer-support-ops</link>
+        <guid>/posts/ai-customer-support-ops</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>A practical guide to building AI-assisted customer support workflows that reduce wait time, improve quality, and protect brand voice.</description>
+      </item>
+      <item>
+        <title>AI for Finance Ops and FP&amp;A: Faster Close, Better Insights</title>
+        <link>/posts/ai-finance-ops-fpa</link>
+        <guid>/posts/ai-finance-ops-fpa</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>Reduce reporting time and improve clarity with AI-assisted finance workflows. A practical guide for FP&amp;A and finance operations teams.</description>
+      </item>
+      <item>
+        <title>AI for Investing: A Research Workflow That Saves Time Without Guessing</title>
+        <link>/posts/ai-investing-research-workflow</link>
+        <guid>/posts/ai-investing-research-workflow</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>Use AI to speed up investment research, not to replace judgment. A safe, structured workflow for notes, risk checks, and decision support.</description>
+      </item>
+      <item>
+        <title>AI for Sales and Marketing Ops: From Leads to Revenue, Faster</title>
+        <link>/posts/ai-sales-marketing-ops</link>
+        <guid>/posts/ai-sales-marketing-ops</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>A high-ROI playbook for using AI in sales and marketing operations: lead scoring, outreach drafts, and campaign insights.</description>
+      </item>
+      <item>
+        <title>מפת דרכים ל‑AI שמשרתת מוצר אמיתי</title>
+        <link>/posts/ai-workflows</link>
+        <guid>/posts/ai-workflows</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>איך לבנות תהליך עבודה שמחבר בין מחקר, פיתוח וערך עסקי בעולם הבינה המלאכותית.</description>
+      </item>
+      <item>
+        <title>המקצועות שייעלמו עד 2030 (האם העבודה שלך ברשימה?)</title>
+        <link>/posts/jobs-disappearing-2030</link>
+        <guid>/posts/jobs-disappearing-2030</guid>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        <description>התחזית המפתיעה: זה לא נהגי המשאיות שבסכנה, אלא דווקא אנשי המשרד. מי הולך הביתה ומי יהפוך לבלתי-מוחלף?</description>
+      </item>
+      <item>
+        <title>איך בונים צוות פיתוח שמאמץ AI בלי להאט</title>
+        <link>/posts/ai-teams</link>
+        <guid>/posts/ai-teams</guid>
+        <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+        <description>שלושה צעדים פרקטיים להטמעת כלי AI בצוותים מוצריים מבלי לוותר על איכות וקצב.</description>
+      </item>
+      <item>
+        <title>אתיקה יומיומית: ברכה לאמא מ-ChatGPT?</title>
+        <link>/posts/ai-ethics-personal</link>
+        <guid>/posts/ai-ethics-personal</guid>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+        <description>מתי זה בסדר להשתמש ב-AI ומתי זה מרגיש כמו זיוף? המדריך לשימוש רגיש.</description>
+      </item>
+      <item>
+        <title>איך לדבר עם AI? (מדריך למתחילים)</title>
+        <link>/posts/human-ai-interaction-guide</link>
+        <guid>/posts/human-ai-interaction-guide</guid>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+        <description>הסבר פשוט וברור איך המחשב &quot;מבין&quot; אתכם ואיך לקבל תשובות טובות יותר, בלי מילים מסובכות.</description>
+      </item>
+      <item>
+        <title>המדריך לפרטיות: מה אסור בשום אופן לספר ל-AI?</title>
+        <link>/posts/privacy-safety-guide</link>
+        <guid>/posts/privacy-safety-guide</guid>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+        <description>האם מותר להעלות מסמכים רפואיים? סיסמאות? סודות מסחריים? כל מה שצריך לדעת כדי להישאר בטוחים.</description>
+      </item>
+      <item>
+        <title>האם ה-AI יחליף אותי בעבודה?</title>
+        <link>/posts/replacement-fear</link>
+        <guid>/posts/replacement-fear</guid>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+        <description>למה לא צריך לפחד שהרובוט יקח לכם את הכיסא, ואיך להפוך אותו לעוזר האישי שלכם.</description>
+      </item>
+      <item>
+        <title>האם צריך להיות מנומסים ל-AI? (והאם זה עוזר)</title>
+        <link>/posts/why-be-polite</link>
+        <guid>/posts/why-be-polite</guid>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+        <description>למה אנחנו אומרים &quot;תודה&quot; למחשב, והאם זה באמת משפר את התשובות שאנחנו מקבלים?</description>
+      </item>
+      <item>
+        <title>טעויות נפוצות: אל תשתמשו בו כמו בגוגל</title>
+        <link>/posts/common-mistakes</link>
+        <guid>/posts/common-mistakes</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>למה חיפוש מילות מפתח לא עובד ב-AI ואיך צריך לשנות את החשיבה.</description>
+      </item>
+      <item>
+        <title>וידוא הבנה: הטריק שיחסוך לכם טעויות</title>
+        <link>/posts/did-ai-understand-me</link>
+        <guid>/posts/did-ai-understand-me</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>איך לבקש מה-AI &quot;לחזור על הדברים&quot; כדי לוודא שהוא באמת הבין את המשימה.</description>
+      </item>
+      <item>
+        <title>טכניקת ELI5: תסביר לי כאילו אני בן 5</title>
+        <link>/posts/explain-simply</link>
+        <guid>/posts/explain-simply</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>איך להפוך כל נושא מסובך (ביטקוין, פיזיקה קוונטית, פוליטיקה) להסבר שילד יכול להבין.</description>
+      </item>
+      <item>
+        <title>השיטה האיטרטיבית: אף פעם לא מספיק פעם אחת</title>
+        <link>/posts/first-prompt-never-enough</link>
+        <guid>/posts/first-prompt-never-enough</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>למה התשובה הראשונה היא רק ההתחלה, ואיך לשפר אותה בשיטת &quot;פינג-פונג&quot;.</description>
+      </item>
+      <item>
+        <title>נוסחת הקסם (CPF): איך לכתוב פרומפט מושלם</title>
+        <link>/posts/how-to-ask-good-question</link>
+        <guid>/posts/how-to-ask-good-question</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>שיטה פשוטה בת 3 שלבים שתבטיח שה-AI יבין אתכם בכל פעם מחדש.</description>
+      </item>
+      <item>
+        <title>שליטה באורך: איך למנוע ממנו לחפור</title>
+        <link>/posts/short-answer-quality</link>
+        <guid>/posts/short-answer-quality</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>ה-AI אוהב לכתוב מגילות. כך תגרמו לו להיות קצר, קולע ולעניין.</description>
+      </item>
+      <item>
+        <title>מה AI באמת עושה (ולמה הוא לא &quot;יודע&quot; כלום)</title>
+        <link>/posts/what-ai-really-does</link>
+        <guid>/posts/what-ai-really-does</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>הבנת ההבדל בין חיפוש בגוגל לבין יצירת טקסט חדש על ידי מחשב.</description>
+      </item>
+      <item>
+        <title>למה הוא נשמע כל כך בטוח בעצמו (גם כשהוא טועה)?</title>
+        <link>/posts/why-ai-sounds-confident</link>
+        <guid>/posts/why-ai-sounds-confident</guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+        <description>הסבר על האופי של המודל ולמה הוא לא יודע להגיד &quot;אני לא יודע&quot;.</description>
+      </item>
+  </channel>
+</rss>

@@ -11,6 +11,8 @@ type PostPageProps = {
 };
 
 export const dynamicParams = false;
+export const dynamic = "force-static";
+export const revalidate = false;
 
 export const generateStaticParams = async () => {
   return getAllPosts().map((post) => ({ slug: post.slug }));

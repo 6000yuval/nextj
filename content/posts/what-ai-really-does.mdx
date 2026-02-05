@@ -1,0 +1,70 @@
+---
+title: "מה AI באמת עושה (ולמה הוא לא \"יודע\" כלום)"
+description: "הבנת ההבדל בין חיפוש בגוגל לבין יצירת טקסט חדש על ידי מחשב."
+date: "2024-03-01"
+coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000"
+author: "???? ???"
+readingTimeMinutes: 5
+---
+
+<div className="space-y-6 text-lg leading-relaxed text-slate-800 text-justify">
+<div className="bg-blue-50 border-r-4 border-blue-600 p-4 mb-6 rounded-lg">
+  <h3 className="text-lg font-bold text-blue-900 mb-2">בשורה התחתונה: חיפוש מול יצירה</h3>
+  <p className="text-blue-800 text-sm md:text-base leading-relaxed">
+    גוגל הוא כמו ספרן בספרייה ענקית - אתם שואלים שאלה, והוא רץ להביא לכם את הספר הנכון. ה-AI (כמו ChatGPT) הוא כמו סופר מוכשר - הוא לא מחפש ספר קיים, הוא <strong>כותב ספר חדש</strong> במיוחד בשבילכם, מילה אחרי מילה, לפי מה שלמד בעבר.
+  </p>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">מנוע חיפוש מול מודל שפה</h3>
+<p>
+  רובנו רגילים להשתמש בגוגל כבר שנים. כשאנחנו מחפשים משהו, גוגל סורק את האינטרנט ומראה לנו דפים שמישהו אחר כתב. המידע נמצא שם בחוץ, וגוגל רק מצביע עליו.
+</p>
+<p>
+  מודל שפה (AI) עובד אחרת לגמרי. אין לו מאגר של "תשובות מוכנות". יש לו ידע עצום על איך השפה עובדת ואיזה מילים מתחברות אחת לשנייה. כשהוא עונה לכם, הוא מייצר את התשובה מאפס.
+</p>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">איך הקסם קורה?</h3>
+<p>
+  תחשבו על ה-AI כמו על תוכי חכם מאוד, שקרא את כל האינטרנט.
+</p>
+<ul className="list-disc list-inside space-y-2 bg-white p-4 rounded-xl border border-slate-200">
+  <li>אתם נותנים לו התחלה של משפט: "בירת צרפת היא..."</li>
+  <li>הוא לא מסתכל במפה. הוא בודק בזיכרון הסטטיסטי שלו: איזו מילה בדרך כלל באה אחרי המילים האלה?</li>
+  <li>התשובה הסטטיסטית היא "פריז". אז הוא כותב "פריז".</li>
+</ul>
+<p className="text-sm text-slate-500 mt-2 italic">
+  זה נקרא "חיזוי הטוקן הבא" (Next Token Prediction). זה נשמע פשוט, אבל כשעושים את זה מיליארדי פעמים בשנייה, זה נראה כמו אינטליגנציה אמיתית.
+</p>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">מה זה אומר לגביכם?</h3>
+<div className="bg-green-50 p-4 rounded-lg border-t-4 border-green-500">
+  <h4 className="font-bold text-green-900 mb-2">יתרונות וחסרונות</h4>
+  <ul className="text-sm text-green-800 space-y-1 list-disc list-inside">
+    <li><strong>יתרון ענק:</strong> הוא יכול ליצור דברים חדשים שלא היו קיימים קודם! מתכונים חדשים, שירים, קוד תוכנה, או סיכומים מותאמים אישית.</li>
+    <li><strong>חיסרון ענק:</strong> בגלל שהוא לא "שולף" עובדה קיימת אלא "מייצר" טקסט, הוא יכול לפעמים להתבלבל ולהמציא עובדות שנשמעות נכונות אבל הן שקר מוחלט (הזיות).</li>
+  </ul>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">טעות נפוצה</h3>
+<p>
+  הרבה אנשים מתייחסים ל-AI כמו לאנציקלופדיה שיודעת הכל. הם שואלים "מה קרה אתמול בחדשות?" או "מה הטלפון של יוסי כהן?".
+  <br/>
+  <strong>התיקון:</strong> למידע עובדתי טהור ועדכני - עדיף גוגל. ליצירה, כתיבה, סיכום והבנה - עדיף AI.
+</p>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">שאלות</h3>
+<div className="space-y-4">
+  <details className="group bg-slate-50 p-4 rounded-lg cursor-pointer">
+    <summary className="font-bold text-slate-800 list-none flex justify-between items-center"><span>האם הוא יודע מי אני?</span></summary>
+    <p className="text-slate-600 mt-2 text-sm">
+      לא, אלא אם סיפרתם לו בשיחה הזאת. אין לו גישה למחשב שלכם או לחיים האישיים שלכם.
+    </p>
+  </details>
+  <details className="group bg-slate-50 p-4 rounded-lg cursor-pointer">
+    <summary className="font-bold text-slate-800 list-none flex justify-between items-center"><span>האם הוא מחובר לאינטרנט?</span></summary>
+    <p className="text-slate-600 mt-2 text-sm">
+      חלקם כן (כמו Gemini או Copilot) וחלקם לא (גרסאות בסיסיות של ChatGPT). תמיד כדאי לבדוק באיזה מודל אתם משתמשים.
+    </p>
+  </details>
+</div>
+</div>

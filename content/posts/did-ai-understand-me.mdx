@@ -1,0 +1,44 @@
+---
+title: "וידוא הבנה: הטריק שיחסוך לכם טעויות"
+description: "איך לבקש מה-AI \"לחזור על הדברים\" כדי לוודא שהוא באמת הבין את המשימה."
+date: "2024-03-01"
+coverImage: "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?auto=format&fit=crop&q=80&w=1000"
+author: "???? ???"
+readingTimeMinutes: 4
+---
+
+<div className="space-y-6 text-lg leading-relaxed text-slate-800 text-justify">
+<div className="bg-blue-50 border-r-4 border-blue-600 p-4 mb-6 rounded-lg">
+  <h3 className="text-lg font-bold text-blue-900 mb-2">בשורה התחתונה: בקשו ממנו לשקף</h3>
+  <p className="text-blue-800 text-sm md:text-base leading-relaxed">
+    במשימות מורכבות, לפני שה-AI מתחיל לעבוד, בקשו ממנו: "חזור במילים שלך על ההוראות שנתתי לך ותגיד לי אם הבנת הכל". זה מכריח אותו לעבד את המידע שוב ומונע ממנו לפספס פרטים קטנים וחשובים. זה נקרא Reflection (שיקוף).
+  </p>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">לוודא קליטה</h3>
+<p>
+  לפעמים אנחנו כותבים פרומפט ארוך ומסובך עם המון אילוצים ("תכתוב קוד, אבל בלי להשתמש בספרייה X, ושיהיה יעיל, ועם הערות בעברית..."). ה-AI עלול "לרפרף" על חלק מההוראות ולהתעלם מהן בטעות.
+</p>
+<p>
+  כשאתם מבקשים ממנו לחזור על ההוראות, אתם בעצם בודקים שהוא "הקשיב" עד הסוף.
+</p>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">איך זה נראה?</h3>
+<div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+  <p className="text-sm font-bold mb-2">הפרומפט שלכם:</p>
+  <p className="text-sm italic text-slate-600 mb-4">"אני צריך תוכנית עסקית. חשוב שהיא תתאים לאנשים מבוגרים, שהמודל יהיה מנויים חודשיים, ושהשיווק יהיה רק בפייסבוק. <span className="font-bold text-blue-600 not-italic">לפני שאתה כותב, תכתוב לי מה הבנת.</span>"</p>
+
+  <p className="text-sm font-bold mb-2">תשובת ה-AI (שיקוף):</p>
+  <p className="text-sm text-green-700 bg-green-50 p-2 rounded">"הבנתי. המשימה היא לכתוב תוכנית עסקית עם שלושה דגשים: 1. קהל יעד גיל שלישי. 2. הכנסות ממנויים. 3. שיווק בפייסבוק בלבד. האם להתחיל?"</p>
+</div>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">למה זה עובד?</h3>
+<p>
+  מבחינה טכנית, כשהמודל כותב את ההוראות בעצמו כפלט, המילים האלה נכנסות ל"זיכרון העבודה" (Context Window) שלו בצורה חזקה יותר. עכשיו, כשהוא יבוא לבצע את המשימה, ההוראות נמצאות לו "מול העיניים" בתוך הטקסט של השיחה, וזה משפר דרמטית את הסיכוי שהוא יבצע אותן במדויק.
+</p>
+
+<h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">מתי לא צריך את זה?</h3>
+<p>
+  בשאלות פשוטות ("מה בירת צרפת?", "תציע לי רעיון למתנה"). השיקוף מיותר כאן ומבזבז זמן. תשתמשו בטריק הזה רק כשהמשימה מורכבת, ארוכה, או כשיש לכם רשימת דרישות ספציפית מאוד שאסור לפספס.
+</p>
+</div>
